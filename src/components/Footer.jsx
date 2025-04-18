@@ -21,13 +21,13 @@ function Footer() {
   ];
 
   const socialLinks = [
-    { name: "Facebook", icon: <FaFacebook />, href: "#" },
-    { name: "Instagram", icon: <FaInstagram />, href: "#" },
-    { name: "LinkedIn", icon: <FaLinkedin />, href: "#" }
+    { name: "Facebook", icon: <FaFacebook />, href: "https://www.facebook.com/share/19gcRFqRy4/" },
+    { name: "Instagram", icon: <FaInstagram />, href: "https://www.instagram.com/camyliyan?igsh=MWRzbHk0OHZ0NHoxeg==" },
+    { name: "LinkedIn", icon: <FaLinkedin />, href: "https://www.linkedin.com/in/tivon-camyliyan-68b21b236?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" }
   ];
 
   return (
-    <footer className="bg-gray-900 text-gray-300">
+    <footer className="bg-[#2d0a10]/100 text-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Column 1 - About */}
@@ -38,12 +38,12 @@ function Footer() {
             viewport={{ once: true }}
           >
             <div className="flex items-center mb-4">
-              <div className="w-12 h-12 bg-red-500 rounded-full flex items-center justify-center text-white text-xl font-bold mr-4">
+              <div className="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center text-red-900 text-xl font-bold mr-4">
                 TC
               </div>
               <h3 className="text-xl font-bold text-white">Tivon Camylian</h3>
             </div>
-            <p className="text-gray-400">
+            <p className="text-gray-200">
               A passionate health promotion undergraduate with a diverse background in community engagement, administration, and creative fashion.
             </p>
           </motion.div>
@@ -61,7 +61,7 @@ function Footer() {
                 <li key={index}>
                   <a
                     href={link.href}
-                    className="text-gray-400 hover:text-red-500 transition-colors duration-300 flex items-center"
+                    className="text-gray-200 hover:text-blue-200 transition-colors duration-300 flex items-center"
                   >
                     <FaArrowRight className="mr-2 text-sm" />
                     {link.name}
@@ -81,20 +81,22 @@ function Footer() {
             <h3 className="text-xl font-bold text-white mb-4">Contact Info</h3>
             <ul className="space-y-3">
               <li className="flex items-center">
-                <FaEnvelope className="text-red-500 mr-3" />
-                <a href="mailto:tivoncamyliyan@gmail.com" className="text-gray-400 hover:text-red-500 transition-colors duration-300">
+                <FaEnvelope className="text-red-100 mr-3" />
+                <a href="mailto:tivoncamyliyan@gmail.com" className="text-gray-200 hover:text-red-400 transition-colors duration-300">
                   tivoncamyliyan@gmail.com
                 </a>
               </li>
               <li className="flex items-center">
-                <FaPhone className="text-red-500 mr-3" />
-                <a href="tel:+94723929005" className="text-gray-400 hover:text-red-500 transition-colors duration-300">
+                <FaPhone className="text-red-100 mr-3" />
+                <a href="tel:+94723929005" className="text-gray-200 hover:text-red-400 transition-colors duration-300">
                   +94 723929005
                 </a>
               </li>
               <li className="flex items-center">
-                <FaMapMarkerAlt className="text-red-500 mr-3" />
-                <span className="text-gray-400">Nuwara Eliya, Sri Lanka</span>
+                <FaMapMarkerAlt className="text-red-100 mr-3" />
+                <a href="tel:+94723929005" className="text-gray-200 hover:text-red-400 transition-colors duration-300">
+                Nuwara Eliya, Sri Lanka
+                </a>
               </li>
             </ul>
           </motion.div>
@@ -107,7 +109,7 @@ function Footer() {
             viewport={{ once: true }}
           >
             <h3 className="text-xl font-bold text-white mb-4">Connect With Me</h3>
-            <p className="text-gray-400 mb-4">
+            <p className="text-gray-200 mb-4">
               Let's stay connected! Follow me for updates on my journey, community work, and future fashion ventures.
             </p>
             <div className="flex space-x-4">
@@ -117,7 +119,7 @@ function Footer() {
                   href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:text-red-500 hover:bg-gray-700 transition-all duration-300"
+                  className="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center text-red-900 hover:text-red-500 hover:bg-red-200 transition-all duration-300"
                 >
                   {social.icon}
                 </a>
@@ -127,8 +129,8 @@ function Footer() {
         </div>
 
         {/* Footer Bottom */}
-        <div className="border-t border-gray-800 mt-12 pt-8">
-          <p className="text-center text-gray-400">
+        <div className="border-t border-gray-200 mt-12 pt-8">
+          <p className="text-center text-gray-200">
             © 2025 Tivon Camylian. All rights reserved.
           </p>
         </div>

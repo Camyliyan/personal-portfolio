@@ -2,6 +2,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FaArrowRight, FaHeart, FaPalette, FaUsers } from 'react-icons/fa';
+import resume from '../assets/resume.pdf';
 
 function Herosection() {
   return (
@@ -13,7 +14,8 @@ function Herosection() {
           alt="Community and Fashion"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-[url('back.jpg')] backdrop-blur-sm"></div>
+       <div className="absolute inset-0 bg-[url('/personal-portfolio/back.jpg')] backdrop-blur-sm"></div>
+
       </div>
 
       {/* Content */}
@@ -76,13 +78,16 @@ function Herosection() {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="flex flex-col sm:flex-row gap-4"
           >
-            <a
-              href="#projects"
-              className="group inline-flex items-center px-8 py-4 bg-red-600 hover:bg-red-900 text-white rounded-lg transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-red-500/20"
-            >
-              Download CV
-              <FaArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
-            </a>
+        <a
+  href={resume}
+  download
+  className="group inline-flex items-center px-8 py-4 bg-red-600 hover:bg-red-900 text-white rounded-lg transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-red-500/20 cursor-pointer"
+>
+  Download CV
+  <FaArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
+</a>
+
+
 
           </motion.div>
         </div>

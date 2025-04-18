@@ -22,7 +22,7 @@ function About() {
                 className="relative"
               >
                 <img
-                  src="sample.jpeg"
+                  src="sample.png"
                   alt="Tivon Camylian"
                   className="w-full h-auto rounded-2xl shadow-xl"
                 />
@@ -60,7 +60,7 @@ function About() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.4 }}
                 viewport={{ once: true }}
-                className="text-xl text-gray-600"
+                className="text-xl font-bold text-gray-600"
               >
                 An undergraduate passionate about health promotion, fashion design, and community impact, 
                 Tivon is dedicated to making a positive change through personal and professional growth.
@@ -90,37 +90,26 @@ function About() {
               className="flex flex-wrap gap-6"
             >
               <div className="flex items-center space-x-2">
-                <div className="w-10 h-10 bg-red-500/10 rounded-full flex items-center justify-center">
-                  <FaUsers className="text-red-500" />
+                <div className="w-10 h-10 bg-red-500 rounded-full flex items-center justify-center">
+                  <FaUsers className="text-red-200" />
                 </div>
                 <span className="text-gray-600">Community Impact</span>
               </div>
               <div className="flex items-center space-x-2">
-                <div className="w-10 h-10 bg-red-500/10 rounded-full flex items-center justify-center">
-                  <FaPalette className="text-red-500" />
+                <div className="w-10 h-10 bg-red-500 rounded-full flex items-center justify-center">
+                  <FaPalette className="text-red-200" />
                 </div>
                 <span className="text-gray-600">Fashion Design</span>
               </div>
               <div className="flex items-center space-x-2">
-                <div className="w-10 h-10 bg-red-500/10 rounded-full flex items-center justify-center">
-                  <FaGlobe className="text-red-500" />
+                <div className="w-10 h-10 bg-red-500 rounded-full flex items-center justify-center">
+                  <FaGlobe className="text-red-200" />
                 </div>
                 <span className="text-gray-600">Trilingual</span>
               </div>
             </motion.div>
 
-            {/* CTA Button */}
-            <motion.a
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 1 }}
-              viewport={{ once: true }}
-              href="#projects"
-              className="group inline-flex items-center px-8 py-4 bg-red-500 hover:bg-red-600 text-white rounded-lg transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-red-500/20"
-            >
-              Learn More About My Journey
-              <FaArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
-            </motion.a>
+          
           </motion.div>
         </div>
       </div>

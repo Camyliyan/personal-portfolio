@@ -51,7 +51,7 @@ function Navigation() {
       transition={{ duration: 0.5 }}
       className={`fixed w-full z-50 transition-all duration-300 ${
         isScrolled
-          ? 'bg-[#1f1c1c]/90 backdrop-blur-md shadow-lg'
+          ? 'bg-[#2d0a10]/90 backdrop-blur-md shadow-lg rounded-b-xl'
           : 'bg-transparent'
       }`}
     >
@@ -64,7 +64,7 @@ function Navigation() {
             transition={{ duration: 0.5 }}
             className="flex-shrink-0"
           >
-            <a href="#home" className="text-white text-2xl font-bold">TC</a>
+            <a href="#home" className="text-white text-2xl font-bold">Tivon Camylian</a>
           </motion.div>
 
           {/* Desktop Menu */}
